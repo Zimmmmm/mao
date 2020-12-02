@@ -1,0 +1,102 @@
+html{
+    // 网页字体
+    font-family: Arial, Helvetica, sans-serif;
+    // 字体颜色
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.zeta{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // height: 100%;
+    z-index: 999;
+    background: url(../image/zeta.JPG) no-repeat;
+    background-size: 100%;
+    transition: all 0.8s;
+}
+
+.header_wrapper{
+    // 背景色
+    background-color: black;
+    header{
+        // 定位
+        position: relative;
+        // 高度设置
+        height: 900px;
+        .zim,.bot,.build_time{
+            // 定位
+            position: absolute;
+            // 垂直居中
+            line-height: 80px;
+            // 字体颜色 
+            color: white;
+            // 字体大小
+            font-size: 70px;
+            // 渐变
+            transition: all 2s;
+            opacity: 0;
+        }
+        
+        .zim,.build_time{
+            // 字体族
+            font-family: Monotype corsiva;
+        }
+        
+        .zim{
+            // 定位
+            top: 220px;
+            left: 80px;
+        }
+        
+        .bot{
+            // 字体族
+            font-family: kaiti;
+            // 定位
+            top: 285px;
+            left: 280px;
+        }
+        
+        .build_time{
+            // 定位
+            top: 550px;
+            right: 100px;
+        }
+    }
+}
+    
+main{
+    position: relative;
+    height: 100%;
+    aside{
+        // 开启浮动
+        float: left;
+        // 宽度高度设置
+        width: 25%;
+        height: 600px;
+        background-color: #bfa;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .content{
+        // 开启浮动
+        float: left;
+        // 宽度高度设置
+        width: 70%;
+        height: 600px;
+        // 左边距设置
+        margin-left: 5%;
+        background-color: orange;
+        // 边框阴影
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+footer{
+    position: relative;
+    top: 80px;
+    background-color: skyblue;
+    height: 150px;
+}
