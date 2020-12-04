@@ -1,0 +1,106 @@
+html{
+    // 网页字体
+    font-family: Arial, Helvetica, sans-serif;
+    // 字体颜色
+    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.cover{
+    // 背景色
+    background-color: black;
+    div{
+        // 定位
+        position: relative;
+        // 高度设置
+        height: 1000px;
+        .zim,.bot,.build_time,.deta{
+            // 定位
+            position: absolute;
+            // 垂直居中
+            line-height: 80px;
+            // 字体颜色 
+            color: white;
+            // 字体大小
+            font-size: 70px;
+            // 渐变
+            transition: all 2s;
+            opacity: 0;
+        }
+        .zim,.build_time{
+            // 字体族
+            font-family: Monotype corsiva;
+        }
+        .zim{
+            // 定位
+            top: 220px;
+            left: 50px;
+        }
+        .bot{
+            // 字体族
+            font-family: kaiti;
+            // 定位
+            top: 285px;
+            left: 240px;
+        }
+        .build_time{
+            // 定位
+            top: 550px;
+            right: 300px;
+        }
+        .deta{
+            right: 0;
+            width: 300px;
+            height: 470px;
+            background: url(../image/δ.jpg) no-repeat;
+            background-size: 300px;
+        }
+    }
+}
+
+.intro{
+    position: relative;
+    // 宽度高度设置
+    top: -250px;
+    height: 800px;
+    // 字体大小
+    font-size: 100px;
+    // 字体颜色
+    color: black;
+    // 字体居中
+    text-align: center;
+}
+
+main{
+    position: relative;
+    height: 100%;
+    aside{
+        // 开启浮动
+        float: left;
+        // 宽度高度设置
+        width: 25%;
+        height: 600px;
+        background-color: #bfa;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .content{
+        // 开启浮动
+        float: left;
+        // 宽度高度设置
+        width: 70%;
+        height: 600px;
+        // 左边距设置
+        margin-left: 5%;
+        background-color: orange;
+        // 边框阴影
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+footer{
+    position: relative;
+    top: 80px;
+    background-color: skyblue;
+    height: 150px;
+}
