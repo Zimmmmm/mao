@@ -1,4 +1,4 @@
-window.addEventListener('load',function() {
+window.addEventListener('DOMContentLoaded',function() {
     var zim = document.querySelector('.zim');
     var bot = document.querySelector('.bot');
     var buildTime = document.querySelector('.build_time');
@@ -11,7 +11,6 @@ window.addEventListener('load',function() {
         zim.style.opacity = '1';
         bot.style.opacity = '1';
         buildTime.style.opacity = '1';
-        
     },500);
 
     // 通过修改字体透明度 在网页下滑时让字符显示 / 隐藏
@@ -41,14 +40,10 @@ window.addEventListener('load',function() {
         })();
         
         (function() {
-            if(scrollY >= 500 && scrollY <= 900)
-            {
+            if(scrollY >= 500 && scrollY <= 900){
                 intro.style.top =  scrollY - 750 + 'px';
             }
         })();
-    
         
     })
-
-
 })
