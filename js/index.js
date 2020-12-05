@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded',function() {
+window.addEventListener('load',function() {
     var zim = document.querySelector('.zim');
     var bot = document.querySelector('.bot');
     var buildTime = document.querySelector('.build_time');
